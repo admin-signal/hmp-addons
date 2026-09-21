@@ -1,0 +1,25 @@
+name: HMP Edge
+version: 0.2.0
+description: Home monitoring appliance for Signal Home
+slug: hmp_edge
+arch:
+- amd64
+startup: application
+boot: auto
+init: true
+homeassistant_api: true
+host_network: false
+ingress: false
+backup: cold
+timeout: 20
+map:
+- type: addon_config
+  path: /addon_config
+  read_only: true
+options: {}
+schema:
+  iot_endpoint: str
+  client_id: match(^[A-Za-z0-9_-]{1,128}$)
+  home_id: match(^[A-Za-z0-9_-]{1,64}$)
+  durable_events: bool?
+image: ghcr.io/admin-signal/hmp-edge
