@@ -1,5 +1,5 @@
 name: HMP Edge
-version: 0.4.0
+version: 0.5.0
 description: Home monitoring appliance for Signal Home
 slug: hmp_edge
 arch:
@@ -18,8 +18,10 @@ map:
   read_only: true
 options: {}
 schema:
-  iot_endpoint: str
-  client_id: match(^[A-Za-z0-9_-]{1,128}$)
-  home_id: match(^[A-Za-z0-9_-]{1,64}$)
+  iot_endpoint: str?
+  client_id: match(^[A-Za-z0-9_-]{1,128}$)?
+  home_id: match(^[A-Za-z0-9_-]{1,64}$)?
+  enrollment_url: url?
+  enrollment_code: password?
   durable_events: bool?
 image: ghcr.io/admin-signal/hmp-edge

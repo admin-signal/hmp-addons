@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0
+
+- Optional staff pairing with device-generated key and persistent identity.
+
 ## 0.4.0
 
 - Group discovered readings by their Home Assistant device.
