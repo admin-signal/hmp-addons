@@ -1,5 +1,5 @@
 name: HMP Edge
-version: 0.3.1
+version: 0.3.2
 description: Home monitoring appliance for Signal Home
 slug: hmp_edge
 arch:
