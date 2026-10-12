@@ -1,9 +1,10 @@
 name: HMP Edge
-version: 0.5.0
+version: 0.5.2
 description: Home monitoring appliance for Signal Home
 slug: hmp_edge
 arch:
 - amd64
+- aarch64
 startup: application
 boot: auto
 init: true
