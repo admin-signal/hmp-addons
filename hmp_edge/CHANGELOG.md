@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.4
+
+- Fix Tailscale status using fixed Supervisor metadata reads with the default role.
+- Add staff-only status/start/stop for the fixed Community Tailscale add-on.
+- Require manual boot, disabled watchdog and an enabled verified Running switch before Start.
+- No Supervisor management role; preserve existing monitoring/device authorization.
+- Separate amd64 and ARM64 images with automatic architecture selection.
+- Optional staff pairing with device-generated key and persistent identity.
+
 ## 0.5.3
 
 - Add staff-only status/start/stop for the fixed Community Tailscale add-on.
