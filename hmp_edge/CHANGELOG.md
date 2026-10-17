@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.5
+
+- Remove a configured device and all its HMP readings while leaving it paired in Home Assistant.
+- Resume interrupted removals and confirm completion after the running registry reloads.
+- Reject old onboarding/removal requests after fresh onboarding.
+- Preserve existing appliance identity, permissions, private administration and amd64/ARM64 selection.
+
 ## 0.5.4
 
 - Fix Tailscale status using fixed Supervisor metadata reads with the default role.
