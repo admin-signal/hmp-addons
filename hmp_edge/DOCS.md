@@ -9,3 +9,7 @@ Administrators can remove a configured device and all its HMP readings, then dis
 ## Optional Tailscale access
 
 HMP Admin staff can check, start and stop the existing Community Tailscale add-on. In HAOS, disable Tailscale Start on boot and Watchdog, and enable its Running switch under the Home Assistant Supervisor integration. HMP refuses Start until it verifies these settings. Starting from HMP does not enable automatic startup; a host reboot leaves Tailscale stopped.
+
+## Sensor health
+
+HMP Admin Sensor health shows last-reported battery and Z-Wave RSSI readings by physical device. Enable diagnostic entities in Home Assistant, then explicitly add each reading through HMP Sensors with monitoring enabled. Customer visibility can remain off. Battery devices may report infrequently; missing RSSI alone does not mean offline. Cloud support must be updated before this Edge release.

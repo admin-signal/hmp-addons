@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.6
+
+- Identify enabled Z-Wave node RSSI diagnostics through Home Assistant registry metadata.
+- Associate signal-strength readings with their physical devices for the HMP Admin battery/RSSI screen.
+- Reuse explicitly authorized, change-suppressed telemetry with dBm units and startup/reconnect readings.
+- Preserve persistent data, permissions, private administration and amd64/ARM64 selection.
+
 ## 0.5.5
 
 - Remove a configured device and all its HMP readings while leaving it paired in Home Assistant.
