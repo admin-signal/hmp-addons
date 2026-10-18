@@ -12,4 +12,8 @@ HMP Admin staff can check, start and stop the existing Community Tailscale add-o
 
 ## Sensor health
 
-HMP Admin Sensor health shows last-reported battery and Z-Wave RSSI readings by physical device. Enable diagnostic entities in Home Assistant, then explicitly add each reading through HMP Sensors with monitoring enabled. Customer visibility can remain off. Battery devices may report infrequently; missing RSSI alone does not mean offline. Cloud support must be updated before this Edge release.
+HMP Admin Sensor health shows last-reported battery and RSSI readings by physical device. Enable diagnostic entities in Home Assistant, then explicitly add each reading through HMP Sensors with monitoring enabled. Customer visibility can remain off. Battery devices may report infrequently; missing RSSI alone does not mean offline. Cloud support must be updated before this Edge release.
+
+## Discovery capacity
+
+Remote discovery supports up to 1000 readings while retaining a 120 KiB MQTT response budget. Oversized lists remain explicitly marked partial. Update Cloud first, then update this add-on and run Discover devices in HMP. Explicitly approve each reading before telemetry is enabled.

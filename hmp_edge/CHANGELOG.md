@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.7
+
+- Expand remote discovery from 100 to 1000 readings so later-sorted battery/RSSI entities are available.
+- Retain the 120 KiB MQTT response budget and explicit partial-list reporting, with efficient payload fitting.
+- Requires the expanded Cloud discovery validator before this add-on update.
+- Preserve persistent data, explicit reading permissions, private administration and amd64/ARM64 selection.
+
 ## 0.5.6
 
 - Identify enabled Z-Wave node RSSI diagnostics through Home Assistant registry metadata.
