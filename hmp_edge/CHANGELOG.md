@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.8
+
+- Classify enabled ZHA LQI diagnostics and Zigbee/Z-Wave protocol using HA registry metadata.
+- Show LQI separately from dBm RSSI, with Z-Wave LQI labeled unsupported. Explicit onboarding remains required.
+- Requires the compatible LQI Cloud discovery validator before this add-on update.
+- Preserve persistent data, explicit reading permissions, private administration and amd64/ARM64 selection.
+
 ## 0.5.7
 
 - Expand remote discovery from 100 to 1000 readings so later-sorted battery/RSSI entities are available.
