@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.0
+
+- Add bounded, read-only sensor history retrieval through the existing outbound connection.
+- Authorize each reading against current enrollment and monitoring permissions.
+- Return compressed observations with accurate partial coverage; historical reads never trigger live alerts.
+- Requires compatible Cloud history support. Recorder retention is configured globally and separately.
+- Preserve persistent data, existing grants, private administration and amd64/ARM64 selection.
+
 ## 0.5.8
 
 - Classify enabled ZHA LQI diagnostics and Zigbee/Z-Wave protocol using HA registry metadata.
