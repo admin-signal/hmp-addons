@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.0
+
+- Upload encrypted recovery backups with per-home HMP authorization and verified replacement.
+- Read-only backup access; retain default Supervisor role and private administration.
+- Save the Home Assistant emergency kit separately; configure daily backups excluding history/media.
+- Include HMP and sensor-related add-on data; replacement radios require separate recovery qualification.
+- Requires compatible Cloud support and explicit per-home enablement.
+
 ## 0.6.1
 
 - Complete older-history request/reply routing in durable MQTT mode.

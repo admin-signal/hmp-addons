@@ -1,5 +1,5 @@
 name: HMP Edge
-version: 0.6.1
+version: 0.7.0
 description: Home monitoring appliance for Signal Home
 slug: hmp_edge
 arch:
@@ -16,6 +16,9 @@ hassio_role: default
 backup: cold
 timeout: 20
 map:
+- type: backup
+  path: /backup
+  read_only: true
 - type: addon_config
   path: /addon_config
   read_only: true
