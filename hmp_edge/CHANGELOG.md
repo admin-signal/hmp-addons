@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.1
+
+- Complete older-history request/reply routing in durable MQTT mode.
+- Keep history subscription failures separate from existing durable telemetry delivery.
+- Authorize each reading against current enrollment and monitoring permissions.
+- Return compressed observations with accurate partial coverage; historical reads never trigger live alerts.
+- Requires compatible Cloud history support. Recorder retention is configured globally and separately.
+- Preserve persistent data, existing grants, private administration and amd64/ARM64 selection.
+
 ## 0.6.0
 
 - Add bounded, read-only sensor history retrieval through the existing outbound connection.
