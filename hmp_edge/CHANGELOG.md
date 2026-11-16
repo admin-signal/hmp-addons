@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0
+
+- Migrate both standard and durable Edge messaging to MQTT 5.0.
+- Preserve existing topics, payloads, authorization, persistent data and outbound mutual TLS on TCP 8883.
+- Validate broker rejection codes and preserve bounded durable receipt/reconnect handling.
+
 ## 0.7.0
 
 - Upload encrypted recovery backups with per-home HMP authorization and verified replacement.
